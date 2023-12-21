@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Particle from "../Particle";
 import ContactImg from "../../Assets/contact.svg";
-import { CgMail } from "react-icons/cg";
+// import { CgMail } from "react-icons/cg";
 import {ImLocation} from "react-icons/im";
 import {AiOutlineMail} from "react-icons/ai"
 
