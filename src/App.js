@@ -1,49 +1,48 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Projects from "./components/Projects/Projects";
+import React, { useEffect, useState } from "react";
+import Backdrop from "./components/Backdrop";
+import Boot from "./components/Boot";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Marquee from "./components/Marquee";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import useReveal from "./hooks/useReveal";
+import "./styles/global.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [booted, setBooted] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
+    const timer = setTimeout(() => setBooted(true), 1300);
     return () => clearTimeout(timer);
   }, []);
 
+  useReveal();
+
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
+    <>
+      <Boot done={booted} />
+      <Backdrop />
+      <div className="shell">
+        <Nav />
+        <main>
+          <Hero />
+          <Marquee />
+          <About />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Achievements />
+          <Contact />
+        </main>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 

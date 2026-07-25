@@ -1,71 +1,50 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub, FiLinkedin, FiTwitter, FiCode } from "react-icons/fi";
+import { profile } from "../data/content";
 
-function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Developed by Shrinish Vhanbatte</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Shrinish Vhanbatte</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/shrinish123"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/bhatte/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/bhattetweets"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/_bhatte/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="footer">
+      <div className="wrap footer__inner">
+        <span>© {year} Shrinish Vhanbatte</span>
+        <span>built with react · no template, no bootstrap</span>
+        <div className="footer__socials">
+          <a
+            href={profile.socials.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <FiGithub />
+          </a>
+          <a
+            href={profile.socials.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FiLinkedin />
+          </a>
+          <a
+            href={profile.socials.twitter}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Twitter"
+          >
+            <FiTwitter />
+          </a>
+          <a
+            href={profile.socials.leetcode}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LeetCode"
+          >
+            <FiCode />
+          </a>
+        </div>
+      </div>
+    </footer>
   );
 }
-
-export default Footer;
