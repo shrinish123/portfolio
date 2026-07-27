@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Shrinish Vhanbatte} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 7350032932
+    ~ \href{mailto:shrinishiitkgp2001@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{shrinishiitkgp2001@gmail.com}} ~
+    \href{https://www.linkedin.com/in/shrinish-vhanbatte-972b11193/?originalSubdomain=in}{\raisebox{-0.2\height}\faLinkedin\ \underline{Shrinish Vhanbatte}} ~
+    \href{https://github.com/shrinish123}{\raisebox{-0.2\height}\faGithub\ \underline{shrinish123}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Kharagpur (IIT Kharagpur)}{2019 - 2024}
+      {Dual Degree (B.Tech + M.Tech) in Civil Engineering}{8.16/10 CGPA}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{TestMu AI (formerly LambdaTest) | Member of Technical Staff} $|$ \emph{Go, Python, C++, AWS}}{April 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered and developed a high-performance Visual Engine using \textbf{C++ with OOPs}, Python, AWS Lambda, Docker, enabling multiple image comparisons using unique \textbf{smart-comparison algorithms}, boosting product revenue by \textbf{20\%}.}
+        \vspace{1pt}
+        \resumeItem{Developed a unique layout comparison algorithm that renders differences in images. Integrated it across microservices in \textbf{Go, JS, and Python} using \textbf{Kafka, AWS Lambda} to enhance the comparisons' experience.}
+        \vspace{1pt}
+        \resumeItem{Engineered and developed a \textbf{robust scheduler microservice} to manage and schedule web scans using cron jobs efficiently, integrating with MySQL and Kafka for \textbf{event-driven communication}.}
+        \vspace{1pt}
+        \resumeItem{Built CRUD APIs in Go microservices to support comparison techniques, resolved multiple customer issues, addressed \textbf{race conditions}, and \textbf{optimized SQL queries} to improve performance by \textbf{40\%}.}
+        \vspace{1pt}
+        \resumeItem{Engineered a \textbf{multi-baseline screenshot comparison} subsystem --- designed the variation schema, \textbf{Redis-coordinated} parallel fan-out via \textbf{Go goroutines}, and deterministic best-match resolution wired through dashboard and public APIs.}
+        \vspace{1pt}
+        \resumeItem{Added \textbf{network logs} support in \textbf{KaneAI} real-device sessions by integrating a \textbf{MITM proxy binary} into the \textbf{HyperExecute VM} flow, capturing full HTTP traffic to power AI-driven test authoring and customer debugging.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TCG Digital}{May 2023 -- Jul 2023}
+      {SDE Intern}{Kolkata, India}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{Built a web app that generates \textbf{source code and Dockerfiles} for CRUD applications from user-supplied specs using \textbf{React, Node.js, PostgreSQL}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{AgentCI --- CI/CD \& Evals for AI Agents} $|$ \emph{Python, FastAPI, Kafka, ClickHouse, MCP} $|$ \href{https://github.com/shrinish123/agentci}{Github}}{July 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Building a \textbf{regression-testing and eval pipeline for AI agents}: eval suites fan out across a model $\times$ parameter matrix, scored by a \textbf{two-stage LLM-as-judge}, with baseline diffs, \textbf{flakiness scoring}, and a pass/warn/fail \textbf{CI gate}.}
+        \resumeItem{Designed the distributed backbone --- \textbf{FastAPI control plane} (REST, WebSocket, \textbf{MCP server}), \textbf{Kafka} workers with DLQ, \textbf{Postgres} OLTP + \textbf{ClickHouse} analytics --- with per-provider \textbf{rate limiting} and per-run \textbf{cost budgets}.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+
+    \resumeProjectHeading
+      {\textbf{Fivo --- Voice-First Finance Agent} $|$ \emph{Python, FastAPI, Postgres (pgvector), Redis, Celery, Docker} $|$ \href{https://github.com/shrinish123/fivo}{Github}}{May 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built the backend for a voice-first personal-finance product: \textbf{async FastAPI + SQLAlchemy 2} layered architecture with JWT auth, Alembic migrations, \textbf{Redis, Celery workers, MinIO/S3}, fully Dockerized.}
+        \resumeItem{Developed a \textbf{tool-calling voice agent} that executes account, transaction, and budget operations from speech, backed by a \textbf{RAG pipeline} --- \textbf{Voyage AI embeddings} indexed and retrieved via \textbf{pgvector}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Competitions / Achievements}
+  \resumeItemListStart
+    \resumeItem{Received a maximum rating of \textbf{2140} (top 1.46\%) on \textbf{LeetCode}, 1812 on CodeChef, 1529 on Codeforces \emph{(handle: bhatte)}.}
+    \vspace{-4pt}
+    \resumeItem{Secured a global rank of \textbf{865} and \textbf{1440} in the \textbf{Google Kick Start} Round H and Round B 2022 respectively.}
+    \vspace{-4pt}
+    \resumeItem{Achieved a global rank of \textbf{1531} in \textbf{Meta Hacker Cup} Round 2 --- T-shirt awarded to top 2000 participants.}
+  \resumeItemListEnd
+\vspace{-13pt}
+
+%-----------HONORS-----------
+\section{Honors / Awards}
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Inter-IIT Tech Meet 10.0 --- Mercari Large-Scale System Design Hackathon}}{March 2022}
+      \resumeItemListStart
+        \resumeItem{Won \textbf{Gold} for proposing a scalable cloud-native microservices architecture for a Healthcare Management System.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+    \resumeProjectHeading
+      {\textbf{Website Hackathon --- IIT Kharagpur}}{April 2022}
+      \resumeItemListStart
+        \resumeItem{Won \textbf{Best Feature Prize} for a Notifications system built with Node.js / Express, among 30+ teams.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeItemListStart
+    \resumeItem{\textbf{Languages:} Go, C++, Python, JavaScript/TypeScript, SQL}
+    \vspace{-4pt}
+    \resumeItem{\textbf{Backend \& Infra:} Microservices, REST, gRPC, Kafka, Redis, MySQL, PostgreSQL, AWS (Lambda, S3), Docker, Kubernetes}
+    \vspace{-4pt}
+    \resumeItem{\textbf{Monitoring \& Tooling:} Datadog, Sumo Logic, New Relic, Git, GitHub Actions, CI/CD}
+    \vspace{-4pt}
+    \resumeItem{\textbf{AI / ML:} LLM agents \& tool calling, RAG, LLM-as-judge evals, MCP, LangChain, OpenAI / Anthropic APIs}
+  \resumeItemListEnd
+
+%-----------OPEN SOURCE-----------
+\section{Open Source Contributions}
+  \resumeItemListStart
+    \resumeItem{Mentored 10+ \textbf{KOSS} students in 2021 \& 2022, fostering growth through projects like Mumble and letsUpsolve.}
+    \vspace{-4pt}
+    \resumeItem{Contributed to \textbf{Rocket.Chat} --- addressed issues and submitted PRs.}
+  \resumeItemListEnd
+
+\end{document}

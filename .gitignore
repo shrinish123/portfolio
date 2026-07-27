@@ -27,3 +27,10 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+# private job-hunt data (recruiter contacts) — never commit
+/private/
+
+# LaTeX build artifacts
+resume/*.aux
+resume/*.log
+resume/*.out

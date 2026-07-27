@@ -18,7 +18,7 @@ export const profile = {
     leetcode: "https://leetcode.com/bhatte/",
   },
   roles: [
-    "Member of Technical Staff @ LambdaTest",
+    "Member of Technical Staff @ TestMu AI",
     "Distributed Systems Engineer",
     "Agentic AI / LLM Infrastructure",
     "Go · C++ · Python",
@@ -46,7 +46,7 @@ export const trace = [
 
 export const experience = [
   {
-    company: "LambdaTest",
+    company: "TestMu AI (formerly LambdaTest)",
     role: "Member of Technical Staff",
     period: "Apr 2024 — Present",
     stack: ["C++", "Go", "Python", "Kafka", "AWS Lambda", "Redis", "MySQL", "Docker"],
@@ -87,7 +87,7 @@ export const projects = [
       "Per-provider rate limiting and per-run cost budgets",
     ],
     stack: ["Python", "FastAPI", "Kafka", "ClickHouse", "Postgres", "MCP"],
-    links: { github: "https://github.com/shrinish123" },
+    links: { github: "https://github.com/shrinish123/agentci" },
   },
   {
     name: "Fivo",
@@ -103,7 +103,7 @@ export const projects = [
       "RAG pipeline with Voyage AI embeddings indexed and retrieved via pgvector",
     ],
     stack: ["Python", "FastAPI", "pgvector", "Redis", "Celery", "Docker"],
-    links: { github: "https://github.com/shrinish123" },
+    links: { github: "https://github.com/shrinish123/fivo" },
   },
   {
     name: "Resume Ranking with LLMs",
@@ -118,7 +118,7 @@ export const projects = [
       "Next.js + Tailwind frontend for side-by-side ranked review",
     ],
     stack: ["Django", "LangChain", "LlamaIndex", "Next.js", "Tailwind"],
-    links: { github: "https://github.com/shrinish123" },
+    links: { github: "https://github.com/shrinish123/resume_ranking_backend" },
   },
   {
     name: "letsUpsolve",
