@@ -2,7 +2,7 @@ import React from "react";
 import { education } from "../data/content";
 
 const NOW = [
-  "Shipping visual-comparison and agent tooling at LambdaTest",
+  "Shipping visual-comparison and agent tooling at TestMu AI",
   "Building AgentCI — evals and CI gates for AI agents",
   "Wiring RAG + tool-calling into Fivo's voice backend",
   "Still grinding contests as @bhatte",
@@ -22,7 +22,7 @@ export default function About() {
         <div className="about__grid">
           <div className="about__body reveal">
             <p>
-              I'm a backend engineer at <strong>LambdaTest</strong>, where I work on the
+              I'm a backend engineer at <strong>TestMu AI</strong> (formerly LambdaTest), where I work on the
               systems behind visual testing and AI-driven test authoring — a{" "}
               <strong>C++ visual engine</strong> doing smart image comparison at scale, Go
               microservices talking over <em>Kafka</em>, schedulers, and the un-glamorous
