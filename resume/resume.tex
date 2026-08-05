@@ -106,9 +106,7 @@
     \resumeProjectHeading
       {\textbf{TestMu AI (formerly LambdaTest) | Member of Technical Staff} $|$ \emph{Go, Python, C++, AWS}}{April 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Engineered and developed a high-performance Visual Engine using \textbf{C++ with OOPs}, Python, AWS Lambda, Docker, enabling multiple image comparisons using unique \textbf{smart-comparison algorithms}, boosting product revenue by \textbf{20\%}.}
-        \vspace{1pt}
-        \resumeItem{Developed a unique layout comparison algorithm that renders differences in images. Integrated it across microservices in \textbf{Go, JS, and Python} using \textbf{Kafka, AWS Lambda} to enhance the comparisons' experience.}
+        \resumeItem{Engineered a high-performance \textbf{Visual Engine} from scratch in \textbf{C++ with OOPs} (Python, AWS Lambda, Docker) --- \textbf{smart-comparison algorithms} that suppress rendering noise and false positives, plus a layout-diff renderer wired across \textbf{Go, JS, and Python} microservices over \textbf{Kafka} --- boosting product revenue by \textbf{20\%}.}
         \vspace{1pt}
         \resumeItem{Engineered and developed a \textbf{robust scheduler microservice} to manage and schedule web scans using cron jobs efficiently, integrating with MySQL and Kafka for \textbf{event-driven communication}.}
         \vspace{1pt}
@@ -136,6 +134,14 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
+      {\textbf{Capia --- Autonomous Agentic Commerce} $|$ \emph{Python, FastAPI, Postgres, Next.js, MCP, WebAuthn} $|$ \href{https://capia-ai.netlify.app}{Live} $|$ \href{https://github.com/shrinish123/capia}{Github}}{August 2026}
+      \resumeItemListStart
+        \resumeItem{Built an agent that buys unattended: natural language compiles into a \textbf{typed purchase rule}, a watcher polls live merchant catalogues over \textbf{Shopify UCP} (23 stores), and on a price/stock hit it quotes, charges, and buys --- inside a spend cap enforced by the \textbf{Visa network} via passkey-approved mandates, not by application code.}
+        \resumeItem{Designed \textbf{capability-scoped agent authority} (tools to raise a limit or approve spend simply do not exist) across four surfaces --- web chat, voice, \textbf{WhatsApp}, and an \textbf{MCP server} over streamable HTTP with scoped revocable tokens --- on \textbf{FastAPI + Postgres}, \textbf{286 passing tests}, one-command Docker bring-up.}
+      \resumeItemListEnd
+      \vspace{-13pt}
+
+    \resumeProjectHeading
       {\textbf{AgentCI --- CI/CD \& Evals for AI Agents} $|$ \emph{Python, FastAPI, Kafka, ClickHouse, MCP} $|$ \href{https://github.com/shrinish123/agentci}{Github}}{July 2026 -- Present}
       \resumeItemListStart
         \resumeItem{Building a \textbf{regression-testing and eval pipeline for AI agents}: eval suites fan out across a model $\times$ parameter matrix, scored by a \textbf{two-stage LLM-as-judge}, with baseline diffs, \textbf{flakiness scoring}, and a pass/warn/fail \textbf{CI gate}.}
@@ -146,40 +152,23 @@
     \resumeProjectHeading
       {\textbf{Fivo --- Voice-First Finance Agent} $|$ \emph{Python, FastAPI, Postgres (pgvector), Redis, Celery, Docker} $|$ \href{https://github.com/shrinish123/fivo}{Github}}{May 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Built the backend for a voice-first personal-finance product: \textbf{async FastAPI + SQLAlchemy 2} layered architecture with JWT auth, Alembic migrations, \textbf{Redis, Celery workers, MinIO/S3}, fully Dockerized.}
-        \resumeItem{Developed a \textbf{tool-calling voice agent} that executes account, transaction, and budget operations from speech, backed by a \textbf{RAG pipeline} --- \textbf{Voyage AI embeddings} indexed and retrieved via \textbf{pgvector}.}
+        \resumeItem{Built the backend for a voice-first finance product --- \textbf{async FastAPI + SQLAlchemy 2}, JWT auth, \textbf{Redis, Celery, MinIO/S3}, Dockerized --- with a \textbf{tool-calling voice agent} that runs account, transaction, and budget operations from speech, backed by a \textbf{RAG pipeline} over \textbf{pgvector}.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 \vspace{-12pt}
 
 %-----------ACHIEVEMENTS-----------
-\section{Competitions / Achievements}
+\section{Achievements / Honors}
   \resumeItemListStart
-    \resumeItem{Received a maximum rating of \textbf{2140} (top 1.46\%) on \textbf{LeetCode}, 1812 on CodeChef, 1529 on Codeforces \emph{(handle: bhatte)}.}
+    \resumeItem{Won \textbf{Gold} at \textbf{Inter-IIT Tech Meet 10.0} (Mercari large-scale system design) for a cloud-native microservices architecture for a Healthcare Management System; \textbf{Best Feature Prize} at the IIT Kharagpur Website Hackathon among 30+ teams.}
     \vspace{-4pt}
-    \resumeItem{Secured a global rank of \textbf{865} and \textbf{1440} in the \textbf{Google Kick Start} Round H and Round B 2022 respectively.}
+    \resumeItem{Maximum rating of \textbf{2140} (top 1.46\%) on \textbf{LeetCode}, 1812 on CodeChef, 1529 on Codeforces \emph{(handle: bhatte)}.}
     \vspace{-4pt}
-    \resumeItem{Achieved a global rank of \textbf{1531} in \textbf{Meta Hacker Cup} Round 2 --- T-shirt awarded to top 2000 participants.}
+    \resumeItem{Global rank \textbf{865} and \textbf{1440} in \textbf{Google Kick Start} Round H / Round B 2022; rank \textbf{1531} in \textbf{Meta Hacker Cup} Round 2 (T-shirt awarded to top 2000).}
+    \vspace{-4pt}
+    \resumeItem{\textbf{Open source:} mentored 10+ \textbf{KOSS} students (2021 \& 2022) on projects like Mumble and letsUpsolve; contributed issues and PRs to \textbf{Rocket.Chat}.}
   \resumeItemListEnd
-\vspace{-13pt}
-
-%-----------HONORS-----------
-\section{Honors / Awards}
-\vspace{-5pt}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Inter-IIT Tech Meet 10.0 --- Mercari Large-Scale System Design Hackathon}}{March 2022}
-      \resumeItemListStart
-        \resumeItem{Won \textbf{Gold} for proposing a scalable cloud-native microservices architecture for a Healthcare Management System.}
-      \resumeItemListEnd
-      \vspace{-13pt}
-    \resumeProjectHeading
-      {\textbf{Website Hackathon --- IIT Kharagpur}}{April 2022}
-      \resumeItemListStart
-        \resumeItem{Won \textbf{Best Feature Prize} for a Notifications system built with Node.js / Express, among 30+ teams.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 \vspace{-15pt}
 
 %-----------SKILLS-----------
@@ -192,14 +181,6 @@
     \resumeItem{\textbf{Monitoring \& Tooling:} Datadog, Sumo Logic, New Relic, Git, GitHub Actions, CI/CD}
     \vspace{-4pt}
     \resumeItem{\textbf{AI / ML:} LLM agents \& tool calling, RAG, LLM-as-judge evals, MCP, LangChain, OpenAI / Anthropic APIs}
-  \resumeItemListEnd
-
-%-----------OPEN SOURCE-----------
-\section{Open Source Contributions}
-  \resumeItemListStart
-    \resumeItem{Mentored 10+ \textbf{KOSS} students in 2021 \& 2022, fostering growth through projects like Mumble and letsUpsolve.}
-    \vspace{-4pt}
-    \resumeItem{Contributed to \textbf{Rocket.Chat} --- addressed issues and submitted PRs.}
   \resumeItemListEnd
 
 \end{document}

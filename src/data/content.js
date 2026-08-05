@@ -73,6 +73,26 @@ export const experience = [
 
 export const projects = [
   {
+    name: "Capia",
+    blurb: "Autonomous agentic commerce",
+    period: "Aug 2026",
+    accent: "mint",
+    status: "shipped",
+    description:
+      "Say what you want and what you'll pay, approve once with a passkey, and close the laptop. Capia compiles your words into a typed purchase rule, watches live merchant catalogues over Shopify's UCP, and buys the moment your conditions fire — inside a spend cap enforced by the Visa network rather than by application code.",
+    highlights: [
+      "Passkey-approved payment mandates: network-enforced caps, single-use Visa credentials, no reusable card number held",
+      "Capability-scoped agent authority — the tools to raise a limit or approve spend simply do not exist",
+      "Four surfaces on one core: web chat, voice, WhatsApp, and an MCP server over streamable HTTP",
+      "FastAPI + Postgres + Next.js, 286 passing tests, one-command Docker bring-up",
+    ],
+    stack: ["Python", "FastAPI", "Postgres", "Next.js", "MCP", "WebAuthn"],
+    links: {
+      github: "https://github.com/shrinish123/capia",
+      demo: "https://capia-ai.netlify.app",
+    },
+  },
+  {
     name: "AgentCI",
     blurb: "CI/CD & evaluation platform for AI agents",
     period: "Jul 2026 — Present",
@@ -103,7 +123,7 @@ export const projects = [
       "RAG pipeline with Voyage AI embeddings indexed and retrieved via pgvector",
     ],
     stack: ["Python", "FastAPI", "pgvector", "Redis", "Celery", "Docker"],
-    links: { github: "https://github.com/shrinish123/fivo" },
+    links: { github: "https://github.com/shrinish123/fivo", demo: "https://fivoai.netlify.app" },
   },
   {
     name: "Resume Ranking with LLMs",
